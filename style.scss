@@ -16,6 +16,7 @@ html {
   header {
     text-align: right;
     padding: 1.5em 1em;
+
     a {
       margin-left: 0.5em;
     }
@@ -30,6 +31,7 @@ html {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding-top: 0em;
       }
 
       img {
@@ -398,6 +400,14 @@ html {
     #bsm {
       color: #1e92f6;
       font-size: 0.8em;
+      margin-bottom: 0;
+    }
+    #mop {
+      color: #a5feee;
+      font-size: 0.8em;
+      @include breakpoint(m, l, xl, xxl) {
+        display: none;
+      }
     }
   }
 }

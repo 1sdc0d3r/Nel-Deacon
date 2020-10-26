@@ -46,6 +46,7 @@ html section:first-child {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    padding-top: 0em;
   }
 }
 
@@ -59,6 +60,7 @@ html section:first-child {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    padding-top: 0em;
   }
 }
 
@@ -72,6 +74,7 @@ html section:first-child {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    padding-top: 0em;
   }
 }
 
@@ -844,5 +847,35 @@ html footer .copy {
 html footer #bsm {
   color: #1e92f6;
   font-size: 0.8em;
+  margin-bottom: 0;
+}
+
+html footer #mop {
+  color: #a5feee;
+  font-size: 0.8em;
+}
+
+@media (min-width: 737px) and (max-width: 980px) {
+  html footer #mop {
+    display: none;
+  }
+}
+
+@media (min-width: 981px) and (max-width: 1280px) {
+  html footer #mop {
+    display: none;
+  }
+}
+
+@media (min-width: 1281) and (max-width: 1680px) {
+  html footer #mop {
+    display: none;
+  }
+}
+
+@media (min-width: 1681px) {
+  html footer #mop {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
