@@ -1,10 +1,403 @@
+@import "./breakpoints/BreakPoints.scss";
+
 html {
   background: black;
   color: #a5feee;
-}
-.first-sect {
-  background: #191919;
-}
-section {
-  display: flex;
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .social-media {
+    color: white;
+  }
+  header {
+    text-align: right;
+    padding: 1.5em 1em;
+    a {
+      margin-left: 0.5em;
+    }
+  }
+  section {
+    display: flex;
+    &:first-child {
+      background: #191919;
+      justify-content: space-around;
+      padding: 5em 0;
+      @include breakpoint(xxs, xs, s) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      img {
+        width: 50%;
+        height: 35em;
+        max-width: 27em;
+        @include breakpoint(xxs, xs, s) {
+          width: 85%;
+        }
+      }
+      div {
+        width: 44%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        @include breakpoint(xxs, xs, s) {
+          width: 100%;
+        }
+
+        h1 {
+          font-size: 4em;
+          margin-bottom: 0;
+        }
+        p {
+          font-size: 1.1em;
+          color: white;
+          margin-bottom: 5em;
+          @include breakpoint(xxs, xs, s) {
+            margin-bottom: 2em;
+          }
+        }
+        .btns {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          width: 100%;
+          @include breakpoint(xxs, xs, s) {
+            flex-direction: column;
+            margin-bottom: 2.5em;
+          }
+
+          button {
+            padding: 1em;
+            border-radius: 1.5em;
+            @include breakpoint(xxs, xs, s) {
+              font-size: 0.8em;
+            }
+          }
+          a:first-child {
+            margin-right: 1em;
+            @include breakpoint(xxs, xs, s) {
+              margin-right: 0;
+              margin-bottom: 1em;
+            }
+
+            button {
+              background: #191919;
+              color: #a5feee;
+              border: 1px solid #a5feee;
+            }
+          }
+          a:last-child {
+            button {
+              background: #a5feee;
+              color: #191919;
+              border: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .music {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10em;
+    margin-top: 1em;
+
+    h2 {
+      font-size: 2.25em;
+      margin-bottom: 2.5em;
+      @include breakpoint(xxs, xs, s) {
+        margin-bottom: 2em;
+      }
+    }
+    .albums {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .col-right {
+        margin-top: 8em;
+        @include breakpoint(xxs, xs, s) {
+          margin-top: 0;
+        }
+      }
+      .album {
+        margin-bottom: 6em;
+        color: white;
+        @include breakpoint(xxs, xs, s) {
+          margin-bottom: 8em !important;
+          &:last-child {
+            margin-bottom: 4em !important;
+          }
+        }
+
+        .title {
+          font-size: 1.2em;
+          color: #a5feee;
+          margin: 2em auto 1.8em;
+        }
+        .date {
+          margin-bottom: 2em;
+        }
+        .track {
+          font-size: 0.95em;
+          font-weight: 400;
+          margin-bottom: 0.5em;
+        }
+        .tracks {
+          list-style-type: none;
+          counter-reset: item;
+          padding: 0;
+          li:before {
+            content: counter(item) " ";
+            counter-increment: item;
+          }
+          li {
+            font-size: 0.95em;
+            font-weight: 400;
+            margin-bottom: 0.5em;
+          }
+        }
+      }
+      #primal {
+        margin-bottom: 12em;
+      }
+      #tiwifl {
+        margin-bottom: 7em;
+      }
+      #the-end {
+        margin-bottom: 15em;
+      }
+    }
+  }
+  .about {
+    background: #191919;
+    justify-content: space-around;
+    padding: 6em 0;
+    @include breakpoint(xxs, xs, s) {
+      flex-direction: column;
+      padding: 4em 0;
+      img {
+        width: 85%;
+        margin: 0 auto 1em;
+      }
+    }
+
+    div {
+      width: 50%;
+      max-width: 28em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+      @include breakpoint(m) {
+        width: 45%;
+      }
+      @include breakpoint(xxs, xs, s) {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        img {
+          margin-bottom: 2em;
+        }
+      }
+
+      h2 {
+        font-size: 1.6em;
+        color: #a5feee;
+      }
+      span {
+        margin: 1em 0;
+      }
+      p {
+        line-height: 1.5em;
+        margin-bottom: 3em;
+      }
+      button {
+        background: #191919;
+        color: #a5feee;
+        padding: 0.95em 1.5em;
+        border: 1px solid #a5feee;
+        border-radius: 1.5em;
+        font-size: 0.8em;
+      }
+    }
+  }
+  .contact {
+    justify-content: space-around;
+    padding: 5em 0;
+    color: white;
+    @include breakpoint(xxs, xs, s) {
+      flex-direction: column;
+      padding-bottom: 2em;
+    }
+
+    img {
+      width: 49%;
+      max-height: 45em;
+      max-width: 30em;
+      @include breakpoint(xxs, xs, s) {
+        width: 85%;
+        margin: auto;
+      }
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: 48%;
+      @include breakpoint(xxs, xs, s) {
+        width: 98%;
+        margin: auto;
+      }
+
+      h2 {
+        color: #a5feee;
+        font-size: 2em;
+      }
+      .social-media {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0.5em auto 3em;
+        width: 40%;
+        a {
+          font-size: 1.25em;
+        }
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      div {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        input {
+          width: 44%;
+          @include breakpoint(xxs, xs, s) {
+            width: 42%;
+          }
+        }
+      }
+      #message {
+        line-height: 1.5em;
+      }
+      input {
+        background: black;
+        color: white;
+        border: 1px solid white;
+        padding: 1em;
+        margin-bottom: 0.8em;
+
+        &[type="submit"] {
+          color: black;
+          background: white;
+          margin-top: 2em;
+        }
+
+        &::-webkit-input-placeholder {
+          color: white;
+          opacity: 1;
+        }
+        &::-moz-placeholder {
+          color: white;
+          opacity: 1;
+        }
+        &:-ms-input-placeholder {
+          color: white;
+          opacity: 1;
+        }
+        &::-ms-input-placeholder {
+          color: white;
+          opacity: 1;
+        }
+        &::placeholder {
+          color: white;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .subscribe {
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    color: white;
+    h3 {
+      margin-bottom: 0;
+      font-size: 1.3em;
+    }
+    p {
+      margin-top: 0;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      input {
+        background: black;
+        border: 1px solid white;
+        padding: 1em;
+        margin-bottom: 0.8em;
+
+        &[type="submit"] {
+          color: black;
+          background: white;
+        }
+
+        &::-webkit-input-placeholder {
+          color: white;
+          opacity: 1;
+        }
+        &::-moz-placeholder {
+          color: white;
+          opacity: 1;
+        }
+        &:-ms-input-placeholder {
+          color: white;
+          opacity: 1;
+        }
+        &::-ms-input-placeholder {
+          color: white;
+          opacity: 1;
+        }
+        &::placeholder {
+          color: white;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  footer {
+    color: white;
+    margin: 5em auto 2em;
+    text-align: center;
+    flex-direction: column;
+    @include breakpoint(xxs, xs, s) {
+      margin-top: 4em;
+    }
+
+    .social-media {
+      margin: 1.5em auto;
+    }
+    a {
+      p {
+        text-decoration: underline;
+      }
+    }
+    .copy {
+      font-size: 0.8em;
+    }
+    #bsm {
+      color: #1e92f6;
+      font-size: 0.8em;
+    }
+  }
 }

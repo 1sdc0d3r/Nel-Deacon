@@ -19,113 +19,252 @@
   <!-- todo alt tags for images -->
   <body>
     <header>
-      <a href="https://twitter.com/Neldeacon" target="_blank">
-        <i class="fa fa-twitter"></i>
-      </a>
-      <a
-        href="https://www.youtube.com/channel/UCypjBv4GetZux2qA5jtYJxg"
-        target="_blank"
-      >
-        <i class="fab fa-youtube"></i>
-      </a>
-      <a href="https://www.facebook.com/Neldeacon" target="_blank">
-        <i class="fa fa-facebook"></i>
-      </a>
-      <a href="https://www.instagram.com/nel_deacon" target="_blank">
-        <i class="fa fa-instagram"></i>
-      </a>
+      <div class="social-media">
+        <a href="https://twitter.com/Neldeacon" target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCypjBv4GetZux2qA5jtYJxg"
+          target="_blank"
+        >
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.facebook.com/Neldeacon" target="_blank">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/nel_deacon" target="_blank">
+          <i class="fa fa-instagram"></i>
+        </a>
+      </div>
     </header>
     <main>
-      <section class="flex first-sect">
-        <div class="left">
+      <section>
+        <div>
           <h1>Nel Deacon</h1>
-          <h5>A Talented Musical Artist</h5>
-          <a href="https://songwhip.com/nel-deacon" target="_blank">
-            <button>Listen To Music</button>
-          </a>
-          <a href="#landing-page">
-            <button>Back To Landing Page</button>
-          </a>
+          <p>A Talented Musical Artist</p>
+          <div class="btns">
+            <a href="https://songwhip.com/nel-deacon" target="_blank">
+              <button>Listen To Music</button>
+            </a>
+            <a href="#landing-page">
+              <button>Back To Landing Page</button>
+            </a>
+          </div>
         </div>
         <img src="./assets/digitized.webp" />
       </section>
       <section class="music">
         <h2>Music</h2>
-        <div class="col">
-          <div class="album">
-            <img src="assets/digitizedRound.webp" />
-            <h4 class="title">infamous me, pt.1</h4>
-            <p class="date">November 2020</p>
-            <span class="track">Upcoming Album</span>
+        <div class="albums">
+          <div>
+            <div class="album">
+              <img src="assets/digitizedRound.webp" />
+              <h4 class="title">infamous me, pt.1</h4>
+              <p class="date">November 2020</p>
+              <span class="track">Upcoming Album</span>
+            </div>
+            <div class="album">
+              <img src="assets/eyes.webp" />
+              <h4 class="title">The Many Misadventures of Myself</h4>
+              <p class="date">Released: January 2020</p>
+              <ol class="tracks">
+                <!-- todo keep 02: or 2: time format -->
+                <li>Please Don't Kill Me (Intro) 1:46</li>
+                <li>Evil 02:40</li>
+                <li>My Beginning 03:38</li>
+                <li>Exhale 02:54</li>
+                <li>ON THE RUN 03:14</li>
+                <li>Reincarnation 03:16</li>
+                <li>The Trip To Hell 03:11</li>
+                <li>SPACE TRIPS 02:52</li>
+                <li>Purple Sunrise 02:58</li>
+                <li>Beach Walks 03:13</li>
+                <li>fight with you 02:31</li>
+                <li>When Its All Over 03:19</li>
+                <li>After All I'm Gonna Dance 02:04</li>
+              </ol>
+            </div>
+            <div class="album">
+              <img src="./assets/continuance.webp" alt="" />
+              <h4 class="title">Continuance-Single</h4>
+              <p class="date">Released: September 2018</p>
+              <span className="track">Continuance- Single 02:25</span>
+            </div>
+            <div class="album">
+              <img src="./assets/dom.webp" alt="" />
+              <h4 class="title">Dream Of Me</h4>
+              <p class="date">Released: January 2018</p>
+              <ol class="tracks">
+                <li>Dream Of Me 3:00</li>
+                <li>Timeless 3:48</li>
+                <li>Something More 4:05</li>
+                <li>Spaceships 2:18</li>
+                <li>Party The Problems Away 5:25</li>
+                <li>Reminiscing 2:42</li>
+                <li>Shut Up And Dance 2:34</li>
+                <li>In The Game Of Life 2:20</li>
+                <li>Arcade Love 2:33</li>
+                <li>I Fell In Love With You In My Dreams 2:14</li>
+                <li>Dream Once More 2:51</li>
+                <li>Not The End... Just The Beginning 3:58</li>
+              </ol>
+            </div>
           </div>
-          <div class="album">
-            <img src="assets/digitizedRound.webp" />
-            <h4 class="title">The Many Misadventures of Myself</h4>
-            <p class="date">Released: January 2020</p>
-            <ol class="tracks">
-              <li>Please Don't Kill Me (Intro) 01:46</li>
-              <li>Evil 02:40</li>
-              <li>My Beginning 03:38</li>
-              <li>Exhale 02:54</li>
-              <li>ON THE RUN 03:14</li>
-              <li>Reincarnation 03:16</li>
-              <li>The Trip To Hell 03:11</li>
-              <li>SPACE TRIPS 02:52</li>
-              <li>Purple Sunrise 02:58</li>
-              <li>Beach Walks 03:13</li>
-              <li>fight with you 02:31</li>
-              <li>When Its All Over 03:19</li>
-              <li>After All I'm Gonna Dance 02:04</li>
-            </ol>
+          <div class="col-right">
+            <div class="album" id="primal">
+              <img src="./assets/primal.webp" alt="Primal album artwork" />
+              <h4 class="title">Primal-Single</h4>
+              <p class="date">Released: August 2020</p>
+              <span class="track">Primal- Single 03:02</span>
+            </div>
+            <div class="album" id="the-end">
+              <img
+                src="./assets/the end.webp"
+                alt="The Z (Original Theme Score) album artwork"
+              />
+              <h4 class="title">The Z (Original Theme Score)</h4>
+              <p class="date">Released: September 2019</p>
+              <ol class="tracks">
+                <li>1 The Z Begins 3:06</li>
+                <li>See Them Coming 3:29</li>
+                <li>End Credits 2:25</li>
+              </ol>
+            </div>
+            <div class="album" id="tiwifl">
+              <img
+                src="./assets/tiwifl.webp"
+                alt="This Is What It Feels Like album artwork"
+              />
+              <h4 class="title">This Is What It Feels Like</h4>
+              <p class="date">Released: June 2018</p>
+              <span class="track">
+                This Is What It Feels Like- Single 03:03</span
+              >
+            </div>
+            <div class="album">
+              <img src="./assets/nd.webp" alt="Nel Deacon album artwork" />
+              <h4 class="title">Nel Deacon</h4>
+              <p class="date">Released: December 2016</p>
+              <ol class="tracks">
+                <li>Change 2:28</li>
+                <li>Hallucinating 2:05</li>
+                <li>In My Darkest Dream 2:58</li>
+                <li>Free Myself 3:20</li>
+                <li>Serial Killer 2:53</li>
+                <li>All In My Head 2:49</li>
+                <li>What Have I Become 3:25</li>
+                <li>In This Moment 2:41</li>
+                <li>This Feeling 02:27</li>
+                <li>Now I Am Happy 3:04</li>
+              </ol>
+            </div>
           </div>
-          <div class="album">
-            <img src="./assets/continuance.webp" alt="" />
-            <h4 class="title">Continuance-Single</h4>
-            <p class="date">Released: September 2018</p>
-            <span className="track">Continuance-Single 02:25</span>
-          </div>
-          <div class="album">
-            <h4 class="title">Dream Of Me</h4>
-            <p class="date">Released: January 2018</p>
-            <ol class="tracks">
-              <li>Dream Of Me 3:00</li>
-              <li>Timeless 3:48</li>
-              <li>Something More 4:05</li>
-              <li>Spaceships 2:18</li>
-              <li>Party The Problems Away 5:25</li>
-              <li>Reminiscing 2:42</li>
-              <li>Shut Up And Dance 2:34</li>
-              <li>In The Game Of Life 2:20</li>
-              <li>Arcade Love 2:33</li>
-              <li>I Fell In Love With You In My Dreams 2:14</li>
-              <li>Dream Once More 2:51</li>
-              <li>Not The End... Just The Beginning 3:58</li>
-            </ol>
-          </div>
-          <div class="col"></div>
         </div>
       </section>
+      <section class="about">
+        <img src="./assets/ndcollar.webp" alt="Nel Deacon" />
+        <div>
+          <h2>All About Nel Deacon</h2>
+          <span>Inspiration of Creativity</span>
+          <p>
+            Nel Deacon is an inspiringly-talented Musician who has dedicated
+            himself to his music and performing. Through his unforgettable
+            impeccable studio recordings, such as (dream of me, 2018) (many
+            misadventures of myself, 2020) they have honed their technical
+            capabilities and sound to form one unstoppable force in the music
+            world. Find out more about his music.
+          </p>
+          <a href="https://songwhip.com/nel-deacon" target="_blank">
+            <button>Listen Now</button>
+          </a>
+        </div>
+      </section>
+      <section class="contact">
+        <img
+          src="./assets/ndbite.webp"
+          alt="Nel Deacon biting collar of leather coat"
+        />
+        <div>
+          <h2>Contact</h2>
+          <span>neldeacon.saww@gmail.com</span>
+          <div class="social-media">
+            <a href="https://twitter.com/Neldeacon" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCypjBv4GetZux2qA5jtYJxg"
+              target="_blank"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.facebook.com/Neldeacon" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/nel_deacon" target="_blank">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </div>
+          <form>
+            <div>
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Email" />
+            </div>
+            <input type="text" placeholder="Subject" />
+            <input
+              type="text"
+              placeholder="Type your message here..."
+              id="message"
+            />
+            <input type="submit" />
+          </form>
+        </div>
+      </section>
+      <section class="subscribe">
+        <h3>Subscribe Form</h3>
+        <p>Stay up to date</p>
+        <form>
+          <input type="text" placeholder="Email Address" />
+          <input type="submit" />
+        </form>
+      </section>
+      <footer>
+        <h3>Nel Deacon</h3>
+        <div class="social-media">
+          <a href="https://twitter.com/Neldeacon" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCypjBv4GetZux2qA5jtYJxg"
+            target="_blank"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.facebook.com/Neldeacon" target="_blank">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/nel_deacon" target="_blank">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </div>
+        <a
+          href="https://prumgarecordings.wixsite.com/neldeaconmusic/privacypolicy"
+          target="_blank"
+        >
+          <p>Privacy Policy</p>
+        </a>
 
-      <!-- <footer>
-        <div class="foot-left">
-          <ul>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-            <li>item 4</li>
-            <li>item 5</li>
-          </ul>
-        </div>
-        <div class="foot-middle">
-          <img src="./img/Logo.PNG" />
-          <h3>TITLE HERE</h3>
-        </div>
-        <div class="foot-right">
-          <i class="fa fa-facebook"></i>
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-pinterest"></i>
-        </div>
-      </footer> -->
+        <span class="copy"
+          >©2020 by Nel Deacon Under License to UMGA Recordings</span
+        >
+        <p id="bsm">
+          <a
+            href="https://www.bluesmokedigitalandprintedmedia.com/"
+            target="_blank"
+          >
+            Custom Website Design by: Blue Smoke Digital and Printed Media
+          </a>
+        </p>
+      </footer>
     </main>
   </body>
 </html>
