@@ -36,15 +36,15 @@ html {
   }
 }
 
-@media (max-width: 360px) {
+@media (min-width: 361px) and (max-width: 480px) {
   html {
     background-position: -4em 5em;
   }
 }
 
-@media (min-width: 361px) and (max-width: 480px) {
+@media (max-width: 360px) {
   html {
-    background-position: -4em 5em;
+    background-position: -5em 5em;
   }
 }
 
@@ -140,7 +140,7 @@ html footer .copy {
 }
 
 html footer #bsm {
-  color: #1e92f6;
+  color: whitesmoke;
   font-size: 0.8em;
   margin-bottom: 0;
 }

@@ -12,9 +12,13 @@ html {
     background-position: -3em 5em;
     background-size: 45em;
   }
-  @include breakpoint(xxs, xs) {
+  @include breakpoint(xs) {
     background-position: -4em 5em;
   }
+  @include breakpoint(xxs) {
+    background-position: -5em 5em;
+  }
+
   a {
     text-decoration: none;
     color: inherit;
@@ -78,7 +82,7 @@ html {
       font-size: 0.8em;
     }
     #bsm {
-      color: #1e92f6;
+      color: whitesmoke;
       font-size: 0.8em;
       margin-bottom: 0;
     }
