@@ -2,6 +2,7 @@ html {
   background: black;
   font-size: 1.2em;
   font-family: Arial, Helvetica, sans-serif;
+  font-display: swap;
   background-image: url("./gc.webp");
   background-size: 55em;
   background-repeat: no-repeat;
