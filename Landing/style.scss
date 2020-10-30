@@ -5,20 +5,20 @@ html {
   font-size: 1.2em;
   font-family: Arial, Helvetica, sans-serif;
   font-display: swap;
-  background-image: url("./gc.webp");
-  background-size: 55em;
-  background-repeat: no-repeat;
-  background-position: 5em 5em;
-  @include breakpoint(xxs, xs, s, m) {
-    background-position: -3em 5em;
-    background-size: 45em;
-  }
-  @include breakpoint(xs) {
-    background-position: -4em 5em;
-  }
-  @include breakpoint(xxs) {
-    background-position: -5em 5em;
-  }
+  // background-image: url("./digitized.png");
+  // background-size: 30em;
+  // background-repeat: no-repeat;
+  // background-position: 25em 5em;
+  // @include breakpoint(xxs, xs, s, m) {
+  //   background-position: -3em 5em;
+  //   background-size: 45em;
+  // }
+  // @include breakpoint(xs) {
+  //   background-position: -4em 5em;
+  // }
+  // @include breakpoint(xxs) {
+  //   background-position: -5em 5em;
+  // }
 
   a {
     text-decoration: none;
@@ -40,6 +40,22 @@ html {
     width: 80%;
     margin: auto;
     justify-content: space-around;
+    position: relative;
+
+    img {
+      position: absolute;
+      z-index: -1;
+      margin-left: 40%;
+      margin-top: -10%;
+      @include breakpoint(s, m) {
+        margin-left: 15%;
+        margin-top: -20%;
+      }
+      @include breakpoint(xxs, xs) {
+        margin-left: 0%;
+        margin-top: -20%;
+      }
+    }
 
     h1 {
       font-size: 4em;
