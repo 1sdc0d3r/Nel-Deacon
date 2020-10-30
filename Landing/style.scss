@@ -51,15 +51,30 @@ html {
       margin-bottom: 2em;
     }
     .date {
-      font-size: 0.95em;
+      font-size: 1.3em;
       margin-bottom: 3em;
+      font-weight: 800;
     }
-    button {
-      background: black;
-      color: #a5feee;
-      border: 1px solid #a5feee;
-      padding: 1em;
-      border-radius: 1.5em;
+    .cta {
+      display: flex;
+      flex-direction: column;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      align-items: center;
+
+      button {
+        background: black;
+        color: #a5feee;
+        border: 1px solid #a5feee;
+        padding: 1em;
+        font-size: 0.8em;
+        border-radius: 1.5em;
+      }
+      .listen-btn {
+        font-size: 1.1em;
+        margin-bottom: 1em;
+      }
     }
   }
   footer {
