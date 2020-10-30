@@ -80,27 +80,9 @@ html section:first-child {
 }
 
 html section:first-child img {
-  width: 50%;
+  width: 100%;
   height: 35em;
   max-width: 27em;
-}
-
-@media (max-width: 360px) {
-  html section:first-child img {
-    width: 85%;
-  }
-}
-
-@media (min-width: 361px) and (max-width: 480px) {
-  html section:first-child img {
-    width: 85%;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 736px) {
-  html section:first-child img {
-    width: 85%;
-  }
 }
 
 html section:first-child div {
