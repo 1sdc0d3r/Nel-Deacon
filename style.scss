@@ -36,12 +36,11 @@ html {
       }
 
       img {
-        width: 50%;
+        // width: 50%;
+        width: 90%;
         height: 35em;
         max-width: 27em;
-        @include breakpoint(xxs, xs, s) {
-          width: 85%;
-        }
+        margin: auto;
       }
       div {
         width: 44%;
@@ -241,7 +240,7 @@ html {
     }
 
     img {
-      width: 49%;
+      width: 80%;
       max-height: 45em;
       max-width: 30em;
       @include breakpoint(xxs, xs, s) {
